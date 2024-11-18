@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-straight/css/uicons-thin-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-straight/css/uicons-bold-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-straight/css/uicons-regular-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+.inter-font {
+  font-family: 'Inter', serif;
+}
+
+.bg-transparent {
+  background-color:transparent;
+}
+
+.pricing-bg {
+  background-image: url("~/assets/img/bg_pricing.png");
+}
+
+.pattern-bg {
+  background-image: url("~/assets/img/bg_pokadot.png");
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    /* -webkit-text-fill-color: #fff !important; */
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* To ensure that buttons and input fields have same width at full width */
+input {
+  box-sizing: border-box;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+select {
+    /* // A reset of styles, including removing the default dropdown arrow */
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    /* background-image: url("../img/expand.svg"); */
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 8px) center;
+  
+    /* // Stack above custom arrow */
+    z-index: 1;
+  
+    /* // Remove dropdown arrow in IE10 & IE11 mt-20*/
+    /* // @link https://www.filamentgroup.com/lab/select-css.html */
+    /* &::-ms-expand {
+      display: none;
+    }
+   */
+    /* // Remove focus outline, will add on alternate element */
+    outline: none;
+}
+
+.bg-neutral{
+  background-color:rgba(192,192,192,0.6)
+}
+
+.digit-box {
+  height: 3rem;
+  width: 3rem;
+  border: 2px solid #EDF2F7;
+  display: inline-block;
+  /* border-radius: 5px; */
+  margin-right: 15px;
+  padding: 15px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.digit-box:focus {
+outline: 0px;
+}
