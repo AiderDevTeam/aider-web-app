@@ -30,13 +30,6 @@ body {
   background-color:transparent;
 }
 
-.pricing-bg {
-  background-image: url("~/assets/img/bg_pricing.png");
-}
-
-.pattern-bg {
-  background-image: url("~/assets/img/bg_pokadot.png");
-}
 
 
 input:-webkit-autofill,
